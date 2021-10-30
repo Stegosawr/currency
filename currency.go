@@ -16,8 +16,8 @@ const currAPIURL = "https://cdn.shopify.com/s/javascripts/currencies.js"
 
 var reCurr = regexp.MustCompile(`(\w+):(\d*\.*\d+)`)
 
-// GetCurrencies rates of the important currencies
-func GetCurrencies() (map[string]float64, error) {
+// GetCurrencyRates rates of the important currencies
+func GetCurrencyRates() (map[string]float64, error) {
 
 	data, err := get(currAPIURL)
 	if err != nil {

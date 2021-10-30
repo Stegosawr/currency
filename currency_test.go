@@ -10,7 +10,7 @@ func TestGetCurrencies(t *testing.T) {
 	}
 
 	t.Run("Default Request Currency Exchange Rate", func(t *testing.T) {
-		currencies, err := GetCurrencies()
+		currencies, err := GetCurrencyRates()
 		if err != nil {
 			t.Error(err)
 		}
